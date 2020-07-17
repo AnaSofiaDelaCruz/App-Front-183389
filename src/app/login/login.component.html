@@ -1,0 +1,21 @@
+
+
+<div style= 'text-align: center;'>
+    <h1>
+         {{ title }}
+    </h1>
+
+    <div *ngFor='let user of users'>
+        <img [src] = 'user.picture.medium'>
+        <h2> {{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</h2>
+        <h4>{{ user.gender }}</h4>
+        <h3> {{ user.email }}</h3>
+        <h5>{{ user.location.street.name }} {{ user.location.street.number }}</h5>
+        <p> {{ user.city }} </p>
+        <h6>{{ user.location.postcode }}</h6>
+        <p>{{ user.phone }}</p>
+        
+        
+
+    </div>
+</div>
