@@ -17,6 +17,8 @@ const routes: Routes = [
     path: 'Usuarios',
     component: UsuariosComponent
   }
+
+  
 ];
 
 @NgModule({
